@@ -1,0 +1,100 @@
+/* D E F A U L T   S T Y L E S */
+:root {
+    --main-txt-color: rgba(0, 0, 0, .85);
+    --sec-txt-color: rgba(0, 0, 0, .65);
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--main-txt-color);
+    -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+hr {
+    margin: 0 0 30px;
+    border-color: var(--main-txt-color);
+}
+
+/* U T I L I T I E S */
+.wrapper {
+    height: 100%;
+}
+
+/* S I D E B A R */
+.sidebar {
+    width: 280px;
+    height: 100%;
+    position: fixed;
+    overflow-y: auto;
+    padding: 0 10px;
+    border-right: 1px solid var(--main-txt-color);
+}
+
+.sidebar .logo {
+    padding: 10px 0;
+}
+.sidebar .logo h1 {
+    margin-bottom: 0;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.sidebar-nav li:first-child {
+    font-family: serif;
+}
+.sidebar-nav a {
+    display: block;
+    padding: 0 15px;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: var(--main-txt-color);
+}
+
+.sidebar-nav .current {
+    font-style: italic;
+    color: rgba(0, 0, 0, .4);
+}
+.sidebar-nav a:not(.current):hover {
+    font-style: italic;
+}
+
+/* M A I N */
+.main {
+    margin-left: 280px;
+}
+
+.main header {
+    padding: 30px 0;
+}
+.main header h1 {
+    font-weight: 400;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+.widget {}
+.widget:last-child {
+    padding-bottom: 10px;
+}
+.widget-title {
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.widget-body {
+    color: var(--main-txt-color);
+}
