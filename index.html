@@ -10,6 +10,8 @@
     
     <!-- Main CSS -->
     <link rel="stylesheet" href="styles.css">
+
+    <script src="https://unpkg.com/feather-icons"></script>
     
     <title>Bootstrap Admin Template by Frontend Sucks</title>
   </head>
@@ -21,7 +23,7 @@
             </div>
             <hr />
             <ul class="sidebar-nav">
-                <li>Navigation</li>
+                <li class="text-muted">Navigation</li>
                 <li><a href="#">Dashboard</a></li>
                 <li><a href="#" class="current">User Profile</a></li>
                 <li><a href="#">Tables</a></li>
@@ -39,7 +41,8 @@
                         <div class="widget">
                             <div class="widget-body">
                                 <h2 class="widget-title">Figure 1</h2>
-                                <span style="font-size:2rem;font-weight:900;letter-spacing: -1px;">123</span>
+                                <span class="counter">123</span>
+                                <i data-feather="shopping-cart"></i>
                             </div>
                         </div>
                     </div>
@@ -47,7 +50,8 @@
                         <div class="widget">
                             <div class="widget-body">
                                 <h2 class="widget-title">Figure 2</h2>
-                                <span style="font-size:2rem;font-weight:900;letter-spacing: -1px;">123</span>
+                                <span class="counter">45</span>
+                                <i data-feather="package"></i>
                             </div>
                         </div>
                     </div>
@@ -55,7 +59,8 @@
                         <div class="widget">
                             <div class="widget-body">
                                 <h2 class="widget-title">Figure 3</h2>
-                                <span style="font-size:2rem;font-weight:900;letter-spacing: -1px;">123</span>
+                                <span class="counter">6</span>
+                                <i data-feather="inbox"></i>
                             </div>
                         </div>
                     </div>
@@ -63,7 +68,8 @@
                         <div class="widget">
                             <div class="widget-body">
                                 <h2 class="widget-title">Figure 4</h2>
-                                <span style="font-size:2rem;font-weight:900;letter-spacing: -1px;">123</span>
+                                <span class="counter">789</span>
+                                <i data-feather="tag"></i>
                             </div>
                         </div>
                     </div>
@@ -120,5 +126,8 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script>
+        feather.replace({ class: 'icon' })
+    </script>
   </body>
 </html>
