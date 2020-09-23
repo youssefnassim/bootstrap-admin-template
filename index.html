@@ -12,62 +12,127 @@
     <link rel="stylesheet" href="styles.css">
 
     <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/gyx7jcz.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400&family=Work+Sans:wght@300;400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"> 
     
     <title>Bootstrap Admin Template by Frontend Sucks</title>
   </head>
   <body>
     <div class="wrapper">
         <div class="sidebar">
+            <button type="button" class="btn sidebar-toggle" data-toggle="button" aria-pressed="false">
+                <i data-feather="arrow-left"></i>
+            </button>
             <div class="logo">
-                <h1><strong>Frontend</strong> Sucks</h1>
+                <!-- <h1><strong>Frontend</strong><br> Sucks</h1> -->
+                <span></span>
             </div>
-            <hr />
             <ul class="sidebar-nav">
-                <li class="text-muted">Navigation</li>
-                <li><a href="#">Dashboard</a></li>
-                <li><a href="#" class="current">User Profile</a></li>
-                <li><a href="#">Tables</a></li>
-                <li><a href="#">Typography</a></li>
-                <li><a href="#">Forms</a></li>
+                <li class="sidebar-nav-h">
+                    Navigation
+                </li>
+                <li><a href="#" class="current">
+                    Dashboard
+                </a></li>
+                <li><a href="#">
+                    User Profile
+                </a></li>
+                <li><a href="#">
+                    Tables
+                </a></li>
+                <li><a href="#">
+                    Typography
+                </a></li>
+                <li><a href="#">
+                    Forms
+                </a></li>
             </ul>
+            <div class="sidebar-nav-footer">
+                <div class="user-btn">
+                    <div class="user-btn-thumbnail">
+                        <span class="user-btn-icon">
+                            <span class="initials">JD</span>
+                        </span>
+                    </div>
+                    <div class="user-btn-meta">
+                        <span class="user-btn-text">John Doe</span>
+                    </div>
+                </div>
+            </div>
         </div><!-- sidebar end-->
         <div class="main">
-            <div class="container">
-                <header>
-                    <h1>User Profile</h1>
-                </header>
-                <div class="row">
+            <header>
+                <h1>Dashboard</h1>
+                <div class="header-nav">
+                    <ul>
+                        <li class="search">
+                            <form action="">
+                                <input type="text" name="" id="" placeholder="Search...">
+                            </form>
+                        </li>
+                        <span class="separator"></span>
+                        <li>
+                            <button class="btn btn-primary brutal">New Item</button>
+                        </li>
+                        <li><a href="#">
+                            <i data-feather="bell"></i>
+                        </a></li>
+                    </ul>
+                </div>
+            </header>
+            <div class="container-fluid">
+                <div class="row d-none">
                     <div class="col">
-                        <div class="widget">
+                        <div class="naked widget">
                             <div class="widget-body">
-                                <h2 class="widget-title">Figure 1</h2>
+                                <div class="underlined widget-title">Typography</div>
+                                <h2>This is heading 2</h2>
+                                <p>Suspendisse vel quam malesuada, aliquet sem sit amet, fringilla elit. Morbi tempor tincidunt tempor. Etiam id turpis viverra, vulputate sapien nec, varius sem. Curabitur ullamcorper fringilla eleifend. In ut eros hendrerit est consequat posuere et at velit.</p>
+                                <h3>This is heading 3</h3>
+                                <p>In nec rhoncus eros. Vestibulum eu mattis nisl. Quisque viverra viverra magna nec pulvinar. Maecenas pellentesque porta augue, consectetur facilisis diam porttitor sed. Suspendisse tempor est sodales augue rutrum tincidunt. Quisque a malesuada purus.</p>
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet</li>
+                                    <li>Consectetur adipiscing elit</li>
+                                    <li>Integer molestie lorem at massa</li>
+                                    <li>Facilisis in pretium nisl aliquet</li>
+                                    <li>Nulla volutpat aliquam velit </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-none">
+                    <div class="col">
+                        <div class="naked widget">
+                            <div class="widget-body">
+                                <h6 class="text-muted">Figure 1</h6>
                                 <span class="counter">123</span>
                                 <i data-feather="shopping-cart"></i>
                             </div>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="widget">
+                        <div class="naked widget">
                             <div class="widget-body">
-                                <h2 class="widget-title">Figure 2</h2>
+                                <h6 class="text-muted">Figure 2</h6>
                                 <span class="counter">45</span>
                                 <i data-feather="package"></i>
                             </div>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="widget">
+                        <div class="naked widget">
                             <div class="widget-body">
-                                <h2 class="widget-title">Figure 3</h2>
+                                <h6 class="text-muted">Figure 3</h6>
                                 <span class="counter">6</span>
                                 <i data-feather="inbox"></i>
                             </div>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="widget">
+                        <div class="naked widget">
                             <div class="widget-body">
-                                <h2 class="widget-title">Figure 4</h2>
+                                <h6 class="text-muted">Figure 4</h6>
                                 <span class="counter">789</span>
                                 <i data-feather="tag"></i>
                             </div>
@@ -75,10 +140,56 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-8">
-                        <div class="widget">
+                    <div class="col-9">
+                        <div class="naked widget">
                             <div class="widget-body">
-                                <h2 class="widget-title">Personal Info</h2>
+                                <h2 class="underlined widget-title">
+                                    Simple table
+                                </h2>
+                                <p>
+                                    For basic styling—light padding and only horizontal dividers—add the base class <code>.table</code> to any <code>&lt;table&gt;</code>.    
+                                </p>
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                        <tr>
+                                            <th scope="col">ID</th>
+                                            <th scope="col">First</th>
+                                            <th scope="col">Last</th>
+                                            <th scope="col">Handle</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td scope="row">1</td>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">2</td>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">3</td>
+                                            <td>Larry</td>
+                                            <td>the Bird</td>
+                                            <td>@twitter</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- col end -->
+                </div><!-- row end -->
+                <div class="row">
+                    <div class="col-6">
+                        <div class="naked widget">
+                            <div class="widget-body">
+                                <h2 class="underlined widget-title">Personal Info</h2>
                                 <h3 class="widget-subtitle text-muted">Change users settings</h3>
                                 <p class="widget-text d-none">
                                     Lorem ipsum is a beautiful text filler
@@ -97,19 +208,15 @@
                                       <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                       <label class="form-check-label" for="exampleCheck1">Check me out</label>
                                     </div>
-                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                    <button type="submit" class="btn btn-primary brutal">Submit</button>
                                 </form>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="widget">
+                    <div class="col-3">
+                        <div class="naked widget">
                             <div class="widget-body">
-                                <h2 class="widget-title">Settings</h2>
-                                <p class="widget-text">
-                                    Lorem ipsum is a beautiful text filler
-                                </p>
-                                <hr />
+                                <h2 class="underlined widget-title">Settings</h2>
                                 <p class="widget-text">
                                     Lorem ipsum is a beautiful text filler
                                 </p>
@@ -126,6 +233,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="js/bbat.js"></script>
     <script>
         feather.replace({ class: 'icon' })
     </script>
