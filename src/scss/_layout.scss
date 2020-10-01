@@ -1,0 +1,91 @@
+.container, .container-fluid {
+	padding-left:  40px !important;
+	padding-right: 40px !important;
+}
+
+.row {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/* body:before {
+    content: '';
+    display: block;
+    width: 10px;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--main-txt-color);
+}
+body:after {
+    content: '';
+    display: block;
+    width: 10px;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: var(--main-txt-color);
+} */
+
+.wrapper:before {
+	/* content: '';
+	display: block;
+	height: 10px;
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: var(--main-txt-color); */
+}
+.wrapper:after {
+	/* content: '';
+	display: block;
+	height: 10px;
+	position: fixed;
+	z-index: 2;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: var(--main-txt-color); */
+}
+
+// Main
+.main {
+	margin-left: 240px;
+	padding: 0 0 20px;
+	transition: all .2s ease-out;
+
+	> .container-fluid:first-of-type, > .container:first-of-type{
+		padding-top: 80px;
+	}
+}
+
+// Layout to collapse sidebar and expand main section
+body.sidebar-collapse {
+	.main {
+		margin-left: 20px;
+
+		header {
+			left: 60px;
+		}
+	}
+
+	.sidebar {
+		left: -225px;
+		&.overlay {
+			left: 0;
+			.sidebar-nav-footer {
+				left: 0;
+			}
+		}
+		.sidebar-nav-footer {
+			left: -240px;
+		}
+	}
+}

@@ -1,0 +1,62 @@
+.main header {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    left: 280px;
+    min-height: 60px;
+    display: flex;
+    padding: 40px 0 10px;
+    background-color: #fff;
+    transition: all .2s ease-out;
+
+    h1 {
+        font-family: Sporting Grotesque_Bold, sans-serif;
+        font-size: 1.23rem;
+        align-self: center;
+        margin: 0;
+    }
+}
+
+.main header.fixed {
+    box-shadow: rgb(255, 255, 255) 0px 20px 20px 0px;
+}
+
+// header nav
+.header-nav {
+    flex-grow: 1;
+    align-self: center;
+    height: auto;
+    padding-right: 30px;
+
+    ul {
+        margin: 0;
+        display: flex;
+        justify-content: flex-end;
+
+        li {
+            margin-left: 15px;
+            align-self: center;
+
+            a {
+                color: var(--sec-txt-color);
+                font-weight: 500;
+            }
+        }
+    }
+    
+    .icon {
+        width: 22px;
+        height: 22px;
+        stroke-width: 2;
+        margin-left: 5px;
+    }
+    
+    .separator {
+        display: block;
+        width: 1px;
+        height: auto;
+        background-color: #e6e8eb;
+        margin-left: 15px;
+    }
+}

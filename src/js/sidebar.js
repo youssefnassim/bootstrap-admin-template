@@ -1,9 +1,3 @@
-/*
- * Author: Youssef Nassim
- * Date: 21 Sep 2020
- *
- **/
-
 const SIDEBAR_TOGGLE_BUTTON = '[data-widget="sidebar"]'
 
 export default class Sidebar {
@@ -34,27 +28,25 @@ export default class Sidebar {
   }
 
   setHoverEvent() {
-    const _this = this
     this.sidebar.addEventListener('mouseover', () => {
-      if (_this._isHidden) {
-        _this.sidebar.classList.add('overlay')
+      if (this._isHidden) {
+        this.sidebar.classList.add('overlay')
       }
     })
     this.sidebar.addEventListener('mouseout', () => {
-      if (_this.toggleBtn.classList.contains('active')) {
-        _this.sidebar.classList.remove('overlay')
+      if (this.toggleBtn.classList.contains('active')) {
+        this.sidebar.classList.remove('overlay')
       }
     })
   }
 
   setClickEvent() {
-    const _this = this
     this.toggleBtn.addEventListener('click', () => {
-      if (_this.toggleBtn.classList.contains('active')) {
-        _this.show()
-        _this.sidebar.classList.remove('overlay')
+      if (this.toggleBtn.classList.contains('active')) {
+        this.show()
+        this.sidebar.classList.remove('overlay')
       } else {
-        _this.hide()
+        this.hide()
       }
     })
   }

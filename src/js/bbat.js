@@ -1,5 +1,11 @@
+/*
+ * Author: Youssef Nassim
+ * Date: 21 Sep 2020
+ *
+ **/
 import Sidebar from './sidebar'
 
+import 'bootstrap'
 // eslint-disable-next-line no-unused-vars
 const sidebar = new Sidebar()
 
