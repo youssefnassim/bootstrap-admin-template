@@ -107,3 +107,49 @@
     transform: translate(-50%, -50%) rotate(180deg);
   }
 }
+
+/* 
+TODO: refactor to generalise button
+*/
+.user-btn {
+  display: flex;
+  margin: -5px; 
+  border-top: 0px solid #d2d2d2;
+  border-radius: 50px;
+  transition: background-color .2s ease-out;
+}
+.user-btn:hover {
+  cursor: pointer;
+  background-color: #eaeaea;
+}
+.user-btn > * {
+  padding: 5px;
+  align-self: center;
+}
+.user-btn-icon {
+  display: block;
+  height: 34px;
+  width: 34px;
+  border-radius: 50px;
+  overflow: hidden;
+  background-color: #e2e3e4;
+  color: var(--sec-txt-color);
+  text-align: center;
+  position: relative;
+}
+.user-btn-icon .initials {
+  font-size: .95rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.user-btn-icon img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50px;
+}
+.user-btn .user-btn-text {
+  font-size: .9rem;
+  font-weight: 500;
+}

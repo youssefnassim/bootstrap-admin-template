@@ -53,3 +53,35 @@ button:focus {
 *:focus {
     outline: none;
 }
+
+@font-face {
+    font-family: 'Sporting Grotesque_Regular';
+    src:    url('../fonts/Sporting_Grotesque-Regular_web.eot');
+    src:    url('../fonts/Sporting_Grotesque-Regular_web.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/Sporting_Grotesque-Regular_web.woff') format('woff'),
+            url('../fonts/Sporting_Grotesque-Regular_web.woff2') format('woff2'),
+            url('../fonts/Sporting_Grotesque-Regular_web.ttf') format('truetype'),
+            url('../fonts/Sporting_Grotesque-Regular_web.svg#svgFontName') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sporting Grotesque_Bold';
+    src:    url('../fonts/Sporting_Grotesque-Bold_web.eot');
+    src:    url('../fonts/Sporting_Grotesque-Bold_web.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/Sporting_Grotesque-Bold_web.woff') format('woff'),
+            url('../fonts/Sporting_Grotesque-Bold_web.woff2') format('woff2'),
+            url('../fonts/Sporting_Grotesque-Bold_web.ttf') format('truetype'),
+            url('../fonts/Sporting_Grotesque-Bold_web.svg#svgFontName') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 
+palette:
+purple: 61085c
+purply red: 61082b
+blue: 0d2481
+orange: ffcb95
+*/
