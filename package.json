@@ -7,7 +7,7 @@
     "css": "npm-run-all --sequential css-compile css-prefix",
     "css-compile": "node-sass --output-style expanded -o dist/css src/scss",
     "css-prefix": "postcss --config build/postcss.config.js --replace \"dist/css/*.css\"",
-    "serve": "browser-sync start --server --files 'dist/js/*.js, dist/css/*.css, *.html'",
+    "serve": "browser-sync start --server --files 'dist/js/*.js, dist/css/*.css, *.html, pages/'",
     "start": "npm-run-all --parallel serve watch",
     "watch": "npm-run-all --parallel watch-css watch-js",
     "watch-css": "nodemon --watch src/scss -e scss --exec \"npm run css\"",

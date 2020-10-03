@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <!-- Main CSS -->
-    <link rel="stylesheet" href="dist/css/styles.css">
+    <link rel="stylesheet" href="../dist/css/styles.css">
 
     <script src="https://unpkg.com/feather-icons"></script>
     
@@ -26,13 +26,13 @@
                 <li class="sidebar-nav-h">
                     Navigation
                 </li>
-                <li><a href="index.html">
+                <li><a href="/index.html">
                     Dashboard
                 </a></li>
                 <li><a href="#">
                     User Profile
                 </a></li>
-                <li><a href="tables.html" class="current">
+                <li><a href="pages/tables.html" class="current">
                     Tables
                 </a></li>
                 <li><a href="#">
@@ -57,13 +57,17 @@
         </div><!-- sidebar end-->
         <div class="main">
             <header>
-                <h1>Basic Tables</h1>
+                <h1>Dashboard</h1>
                 <div class="header-nav">
                     <ul>
                         <li class="search">
                             <form action="">
                                 <input type="text" name="" id="" placeholder="Search...">
                             </form>
+                        </li>
+                        <span class="separator"></span>
+                        <li>
+                            <button class="btn btn-primary brutal" data-widget="sidebar">New Item</button>
                         </li>
                         <li><a href="#">
                             <i data-feather="bell"></i>
@@ -73,12 +77,15 @@
             </header>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col">
+                    <div class="col-9">
                         <div class="naked widget">
                             <div class="widget-body">
                                 <h2 class="underlined widget-title">
                                     Simple table
                                 </h2>
+                                <p>
+                                    For basic styling—light padding and only horizontal dividers—add the base class <code>.table</code> to any <code>&lt;table&gt;</code>.
+                                </p>
                                 <div class="table-responsive">
                                     <table class="table">
                                         <thead>
@@ -114,14 +121,107 @@
                             </div>
                         </div>
                     </div><!-- col end -->
-                    <div class="col">
+                    <div class="col-9">
                         <div class="naked widget">
                             <div class="widget-body">
                                 <h2 class="underlined widget-title">
                                     Striped rows
                                 </h2>
+                                <p>
+                                    Use <code>.table-striped</code> to add zebra-striping to any table row within the <code>&lt;tbody&gt;</code>.
+                                </p>
                                 <div class="table-responsive">
                                     <table class="table table-striped">
+                                        <thead>
+                                        <tr>
+                                            <th scope="col">ID</th>
+                                            <th scope="col">First</th>
+                                            <th scope="col">Last</th>
+                                            <th scope="col">Handle</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td scope="row">1</td>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">2</td>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">3</td>
+                                            <td>Larry</td>
+                                            <td>the Bird</td>
+                                            <td>@twitter</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- col end -->
+                </div><!-- row end -->
+                <div class="row">
+                    <div class="col-9">
+                        <div class="naked widget">
+                            <div class="widget-body">
+                                <h2 class="underlined widget-title">
+                                    Bordered table
+                                </h2>
+                                <p>
+                                    Add <code>.table-bordered</code> for borders on all sides of the table and cells.
+                                </p>
+                                <div class="table-responsive">
+                                    <table class="table table-bordered ">
+                                        <thead>
+                                        <tr>
+                                            <th scope="col">ID</th>
+                                            <th scope="col">First</th>
+                                            <th scope="col">Last</th>
+                                            <th scope="col">Handle</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td scope="row">1</td>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">2</td>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">3</td>
+                                            <td>Larry</td>
+                                            <td>the Bird</td>
+                                            <td>@twitter</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- col end -->
+                    <div class="col-9">
+                        <div class="naked widget">
+                            <div class="widget-body">
+                                <h2 class="underlined widget-title">
+                                    Hoverable rows
+                                </h2>
+                                <p>
+                                    Add <code>.table-hover</code> to enable a hover state on table rows within a <code>&lt;tbody&gt;</code>.
+                                </p>
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
                                         <thead>
                                         <tr>
                                             <th scope="col">ID</th>
@@ -161,7 +261,7 @@
     </div><!-- wrapper end-->
 
    <!-- JavaScript -->
-    <script src="dist/js/bbat.min.js"></script>
+    <script src="../dist/js/bbat.min.js"></script>
     <script>
         feather.replace({ class: 'icon' })
     </script>

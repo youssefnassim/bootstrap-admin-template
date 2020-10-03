@@ -1,4 +1,4 @@
-## Introdction
+## Introduction
 
 A brutalist admin template based on Bootstrap. It's still a work in progress, or rather in it's starting phase.
 

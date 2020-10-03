@@ -28,7 +28,8 @@ hr {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: Sporting Grotesque_Bold;
+    // font-family: Sporting Grotesque_Bold;
+    // font-weight: 600;
     color: #000;
 }
 
@@ -37,8 +38,8 @@ button:focus {
 }
 
 .btn.brutal {
-    border-radius: 2px;
-    border: 2px solid #0d2481;
+    border-radius: 1px;
+    border-color: #0d2481;
     padding: 3px 12px;
     font-size: .95rem;
     font-weight: 500;
@@ -46,8 +47,8 @@ button:focus {
 }
 
 .btn.brutal:hover {
-    background-color: #fff;
-    color: #0d2481;
+    background-color: #1c3da3;
+    border-color: #1c3da3;
 }
 
 *:focus {
