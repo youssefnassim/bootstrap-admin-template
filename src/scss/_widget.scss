@@ -1,75 +1,30 @@
-.widget-body {
-    position: relative;
-}
-.widget.naked {
-    margin: 0  0 20px 0;
-}
-.widget:not(.naked), .widget.dark {
-    border-radius: 10px;
-    padding: 20px 0;
-    background: #fff;
-}
-.widget:not(.naked) .widget-body > *:not(table):not(.table-responsive):not(.icon) {
-    padding: 0 20px;
-}
-.widget:not(.naked):not(.dark) {
-    /* box-shadow: rgba(0, 0, 0, 0.07) 1px 1px 5px 0px; */
-    /* background-color: rgb(242, 244, 244); */
-    border: 2px solid #f2f3f4;
-    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px; */
-    /* border: 1px solid #dfdfdf;
-    box-shadow: 1px 2px 4px rgba(0,0,0,.03); */
+.widget {
+    // background-color: #fff;
+    // border: 1px solid $border-color;
+    // // box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 15px 0px;
+    // border-radius: 5px;
+    // padding: 20px;
 
+    .widget-title {
+        font-family: Sporting Grotesque_Bold;
+        font-size: .9rem;
+        font-weight: normal;
+        letter-spacing: -.35px;
+
+        &.underlined:after {
+            content: '';
+            display: block;
+            margin: 10px 0 20px;
+            border-bottom: 1px solid $border-color;
+        }
+    }
+
+    .widget-subtitle {
+
+        font-family: inherit;
+        font-size: .9rem;
+        margin-bottom: 10px;
+    }
 }
-.widget.dark {
-    background-color: #f8f8f8;
-}
-.widget-title {
-    font-family: Sporting Grotesque_Bold;
-    font-size: .93rem;
-    font-weight: normal;
-    letter-spacing: -.25px;
-    /* text-transform: uppercase; */
-    margin-bottom: 20px;
-}
-.widget-title.underlined::after {
-    content: '';
-    display: block;
-    border-bottom: 1px solid #e6e8eb;
-    margin: 10px 0;
-}
-.widget:not(.naked) .widget-title {
-}
-.widget-subtitle {
-    margin: -10px 0 20px 0;
-    font-size: .9rem;
-    font-weight: 400;
-    font-family: inherit;
-}
-.widget-body > *:last-child:not(table) { /* select last child of .widget-body */
-    display: block;
-    padding-bottom: 0;
-    margin-bottom: 0;
-}
-.widget-body ul {
-    font-size: .95rem;
-    list-style: disc;
-    padding-left: 50px !important;
-}
-.widget hr {
-    margin: 15px 0;
-}
-.widget .counter {
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: -1px;
-}
-.widget-body .icon {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 25px;
-    width: 60px;
-    height: 60px;
-    stroke-width: 1;
+.widget-body {
 }

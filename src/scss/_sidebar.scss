@@ -6,8 +6,8 @@
   left: 0;
   z-index: 2;
   overflow-y: auto;
-  padding: 10px 0;
   background: #f2f2f2;
+  padding: 0 35px;
 
   hr {
     border-color: #d2d2d2;
@@ -24,17 +24,34 @@
       padding-bottom: 60px;
     }
 
+    .icon {
+      align-self: center;
+      margin-right: 10px;
+      stroke-width: 1.5;
+      width: 18px;
+    }
+
+    span {
+      align-self: center;
+    }
+
     a {
-      display: inline-block;
-      padding: 10px 35px;
-      margin-bottom: 2px;
+      display: flex;
+      padding: 0;
+      margin: 0 0 20px;
+      border-radius: 5px;
       font-family: Sporting Grotesque_Regular;
       font-size: .92rem;
-      font-weight: 400;
+      font-weight: 500;
       color: rgb(102, 102, 102);
 
       &.current {
-        color: var(--main-txt-color); 
+        // font-style: italic;
+        color: black;
+
+        .icon {
+          color: inherit;
+        }
       }
 
       &:not(.current):hover {
@@ -43,22 +60,22 @@
     }
 
     .sidebar-nav-h {
-      padding: 0 35px;
-      margin-bottom: 10px;
-      color: rgb(102, 102, 102);
-      font-size: .78rem;
-      letter-spacing: .2px;
+      margin-bottom: 20px;
+      font-size: .8rem;
+      color: #666;
     }
   }
 
   .sidebar-nav-footer {
+    display: none;
     position: fixed;
     z-index: 1;
     bottom: 0px;
     left: 0px;
     width: 240px;
     padding: 20px;
-    background-color: #f2f2f2;
+    background-color: inherit;
+    border: inherit;
 
     &:before {
       content: '';
@@ -128,11 +145,13 @@ TODO: refactor to generalise button
 }
 .user-btn-icon {
   display: block;
-  height: 34px;
-  width: 34px;
+  padding: 2px;
+  height: 32px;
+  width: 32px;
   border-radius: 50px;
+  border: 2px solid rgba(13, 36, 129, .2);
   overflow: hidden;
-  background-color: #e2e3e4;
+  background-color: #fff;
   color: var(--sec-txt-color);
   text-align: center;
   position: relative;

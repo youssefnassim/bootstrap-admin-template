@@ -1,34 +1,22 @@
 .main header {
-    position: fixed;
+    height: 90px;
+    position: sticky;
     z-index: 1;
     top: 0;
-    right: 0;
-    left: 280px;
-    min-height: 60px;
     display: flex;
-    padding: 40px 0 10px;
-    background-color: #fff;
+    padding: 20px 35px 0;
+    margin-bottom: 15px;
     transition: all .2s ease-out;
+    background-color: white;
 
     h1 {
-        font-family: Sporting Grotesque_Bold, sans-serif;
-        font-weight: normal;
+        font-family: Sporting Grotesque_Bold;
         font-size: 1.23rem;
+        font-weight: normal;
+        letter-spacing: -.2px;
         align-self: center;
         margin: 0;
     }
-}
-
-.main header.fixed {
-    box-shadow: rgb(255, 255, 255) 0px 20px 20px 0px;
-}
-
-// header nav
-.header-nav {
-    flex-grow: 1;
-    align-self: center;
-    height: auto;
-    padding-right: 30px;
 
     ul {
         margin: 0;
@@ -38,6 +26,7 @@
         li {
             margin-left: 15px;
             align-self: center;
+            flex: 0 0 auto; // flex-shrink not supported in <IE10
 
             a {
                 color: var(--sec-txt-color);
@@ -49,7 +38,52 @@
     .icon {
         width: 22px;
         height: 22px;
-        stroke-width: 2;
+        stroke-width: 1.75;
+        margin-left: 5px;
+    }
+
+    .separator {
+        display: block;
+        width: 1px;
+        height: auto;
+        background-color: #e6e8eb;
+        margin-left: 15px;
+    }
+}
+
+.main header.fixed {
+    // box-shadow: rgb(255, 255, 255) 0px 20px 20px 0px;
+    // border-bottom: 1px solid $border-color;
+}
+
+// header nav
+.header-nav {
+    flex-grow: 1;
+    align-self: center;
+    height: auto;
+    // padding-right: 30px;
+
+    ul {
+        margin: 0;
+        display: flex;
+        justify-content: flex-end;
+
+        li {
+            margin-left: 15px;
+            align-self: center;
+            flex: 0 0 auto; // flex-shrink not supported in <IE10
+
+            a {
+                color: var(--sec-txt-color);
+                font-weight: 500;
+            }
+        }
+    }
+    
+    .icon {
+        width: 22px;
+        height: 22px;
+        stroke-width: 1.75;
         margin-left: 5px;
     }
     
@@ -64,7 +98,7 @@
 
 /* search */
 .search {
-    width: 260px;
+    width: 250px;
 }
 .search form {
     width: 100%;
@@ -72,8 +106,8 @@
 .search input {
     width: 100%;
     padding: 5px 20px;
-    border: 1px solid #e2e2e2;
-    border-radius: 2px;
+    border: 1px solid #d9d9d9;
+    border-radius: $border-radius;
     background-color: #fff;
     color: var(--sec-txt-color);
 }

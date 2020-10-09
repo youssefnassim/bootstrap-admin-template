@@ -1,11 +1,12 @@
 .container, .container-fluid {
-	padding-left:  40px !important;
-	padding-right: 40px !important;
+	padding-left:  35px !important;
+	padding-right: 35px !important;
 }
 
-.row {
-	margin-top: 20px;
-	margin-bottom: 20px;
+.row [class*="col-"], .row .col{
+	margin-top: 10px;
+	margin-bottom: 10px;
+
 }
 
 /* body:before {
@@ -60,10 +61,6 @@ body:after {
 	margin-left: 240px;
 	padding: 0 0 20px;
 	transition: all .2s ease-out;
-
-	> .container-fluid:first-of-type, > .container:first-of-type{
-		padding-top: 100px;
-	}
 }
 
 // Layout to collapse sidebar and expand main section
@@ -72,12 +69,12 @@ body.sidebar-collapse {
 		margin-left: 20px;
 
 		header {
-			left: 60px;
+			left: 20px;
 		}
 	}
 
 	.sidebar {
-		left: -225px;
+		left: -220px;
 		&.overlay {
 			left: 0;
 			.sidebar-nav-footer {

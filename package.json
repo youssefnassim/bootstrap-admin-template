@@ -5,7 +5,7 @@
   "main": "dist/js/bbat.min.js",
   "scripts": {
     "css": "npm-run-all --sequential css-compile css-prefix",
-    "css-compile": "node-sass --output-style expanded -o dist/css src/scss",
+    "css-compile": "node-sass --include-path node_modules --output-style expanded -o dist/css src/scss",
     "css-prefix": "postcss --config build/postcss.config.js --replace \"dist/css/*.css\"",
     "serve": "browser-sync start --server --files 'dist/js/*.js, dist/css/*.css, *.html, pages/'",
     "start": "npm-run-all --parallel serve watch",
@@ -49,6 +49,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.5.2",
+    "chart.js": "^2.9.3",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1"
   }

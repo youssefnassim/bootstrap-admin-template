@@ -22,20 +22,27 @@
                 <i data-feather="arrow-left"></i>
             </button>
             <div class="logo">
-                <!-- <h1><strong>Frontend</strong><br> Sucks</h1> -->
+                <!-- <h1><strong>Company</strong> Name</h1> -->
                 <span></span>
             </div>
+            <ul class="sidebar-nav">
+                <li>
+                    <a href="#">
+                        Search
+                    </a>
+                </li>
+            </ul>
             <ul class="sidebar-nav">
                 <li class="sidebar-nav-h">
                     Navigation
                 </li>
-                <li><a href="index.html" class="current">
+                <li><a href="/" class="current">
                     Dashboard
                 </a></li>
                 <li><a href="#">
-                    User Profile
+                    User  Profile
                 </a></li>
-                <li><a href="pages/tables.html">
+                <li><a href="/pages/tables.html">
                     Tables
                 </a></li>
                 <li><a href="#">
@@ -59,29 +66,31 @@
             </div>
         </div><!-- sidebar end-->
         <div class="main">
-            <header>
+            <header class="d-flex justify-content-between flex-wrap align-items-center">
                 <h1>Dashboard</h1>
-                <div class="header-nav">
-                    <ul>
-                        <li class="search">
-                            <form action="">
-                                <input type="text" name="" id="" placeholder="Search...">
-                            </form>
-                        </li>
-                        <span class="separator"></span>
-                        <li>
-                            <button class="btn btn-primary brutal" data-widget="sidebar">New Item</button>
-                        </li>
-                        <li><a href="#">
-                            <i data-feather="bell"></i>
-                        </a></li>
-                    </ul>
-                </div>
+                <ul class="d-flex align-items-center">
+                    <!-- <li class="search">
+                        <form action="">
+                            <input type="text" name="" id="" placeholder="Search...">
+                        </form>
+                    </li> -->
+                    <!-- <span class="separator"></span> -->
+                    <!-- <li>
+                        <button class="btn btn-primary brutal" data-widget="sidebar">New Item</button>
+                    </li> -->
+                    <li><a href="#">
+                        <i data-feather="bell"></i>
+                    </a></li>
+                    <li><a href="#">
+                        <i data-feather="user"></i> John Doe
+                    </a></li>
+                </ul>
             </header>
+            
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col-10">
-                        <div class="naked widget d-none">
+                <div class="row d-none">
+                    <div class="col">
+                        <div class="widget">
                             <div class="widget-body">
                                 <h2 class="underlined widget-title">Typography</h2>
                                 <h1>This is heading 1</h1>
@@ -103,38 +112,38 @@
                         </div>
                     </div>
                 </div>
-                <div class="row d-none">
-                    <div class="col">
-                        <div class="naked widget">
+                <div class="row mt-2 d-none">
+                    <div class="col-3">
+                        <div class="widget">
                             <div class="widget-body">
-                                <h6 class="text-muted">Figure 1</h6>
+                                <h4 class="text-muted">Figure 1</h4>
                                 <span class="counter">123</span>
                                 <i data-feather="shopping-cart"></i>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="naked widget">
+                    <div class="col-3">
+                        <div class="widget">
                             <div class="widget-body">
-                                <h6 class="text-muted">Figure 2</h6>
+                                <h4 class="text-muted">Figure 2</h4>
                                 <span class="counter">45</span>
                                 <i data-feather="package"></i>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="naked widget">
+                    <div class="col-3">
+                        <div class="widget">
                             <div class="widget-body">
-                                <h6 class="text-muted">Figure 3</h6>
+                                <h4 class="text-muted">Figure 3</h4>
                                 <span class="counter">6</span>
                                 <i data-feather="inbox"></i>
                             </div>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="naked widget">
+                        <div class="widget">
                             <div class="widget-body">
-                                <h6 class="text-muted">Figure 4</h6>
+                                <h4 class="text-muted">Figure 4</h4>
                                 <span class="counter">789</span>
                                 <i data-feather="tag"></i>
                             </div>
@@ -142,8 +151,61 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-6">
-                        <div class="naked widget">
+                    <div class="col">
+                        <div class="widget">
+                            <div class="widget-body">
+                                <h2 class="underlined widget-title">Chart Sample</h2>
+                                <canvas id="myChart" class="w-100 my-4" height="350"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="widget">
+                            <div class="widget-body">
+                                <h2 class="underlined widget-title">
+                                    Some data
+                                </h2>
+                                <div class="table-responsive">
+                                    <table class="table table-bordered">
+                                        <thead class="thead-light">
+                                        <tr>
+                                            <th scope="col">ID</th>
+                                            <th scope="col">First</th>
+                                            <th scope="col">Last</th>
+                                            <th scope="col">Handle</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td scope="row">1</td>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">2</td>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">3</td>
+                                            <td>Larry</td>
+                                            <td>the Bird</td>
+                                            <td>@twitter</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="widget">
                             <div class="widget-body">
                                 <h2 class="underlined widget-title">Personal Info</h2>
                                 <h3 class="widget-subtitle text-muted">Change users settings</h3>
@@ -164,13 +226,13 @@
                                       <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                       <label class="form-check-label" for="exampleCheck1">Check me out</label>
                                     </div>
-                                    <button type="submit" class="btn btn-primary brutal">Submit</button>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
                                 </form>
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
-                        <div class="naked widget">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="widget">
                             <div class="widget-body">
                                 <h2 class="underlined widget-title">Settings</h2>
                                 <p class="widget-text">
@@ -189,5 +251,39 @@
     <script>
         feather.replace({ class: 'icon' })
     </script>
+    <script>
+        var canvas = document.getElementById("myChart"); 
+        var ctx = canvas.getContext("2d"); 
+        var gradientFill = ctx.createLinearGradient(0, 0, 0, 300);
+        gradientFill.addColorStop(0, "rgba(97, 8, 43, .05)");
+        gradientFill.addColorStop(1, "rgba(97, 8, 43, .05)");
+        new Chart('myChart', {
+          type: 'line',
+          options: {
+            scales: {
+              yAxes: [{
+                ticks: {
+                  beginAtZero: false
+                }
+              }]
+            },
+            legend : {
+                display: false
+            }
+          },
+          data: {
+            labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+            datasets: [{
+                label: 'Earned',
+                data: [0, 10, 5, 15, 10, 20, 15, 25, 20, 30, 25, 40],
+                // lineTension: 0,
+                backgroundColor: 'transparent',
+                borderColor: '#81c3fa',
+                borderWidth: 4,
+                pointBackgroundColor: '#81c3fa'
+            }]
+          }
+        });
+      </script>
   </body>
 </html>
