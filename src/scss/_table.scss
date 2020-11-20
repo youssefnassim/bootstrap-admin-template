@@ -2,14 +2,20 @@
 .table {
     margin-bottom: 0;
 
-    thead th {
+    thead th, &.table-bordered thead th {
         font-weight: 400;
         font-size: .8rem;
-        color: #637282;
+        color: var(--sec-txt-color);
         border-bottom: none;
     }
 
     &:not(.table-bordered) thead th {
         border-top: none;
+        border-bottom: 1px solid $border-color;
+    }
+
+    .icon {
+        stroke-width: 2;
+        width: 25px;
     }
 }

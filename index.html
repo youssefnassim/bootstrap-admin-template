@@ -11,150 +11,77 @@
     <!-- Fonts -->
     <script src="https://unpkg.com/feather-icons"></script>
     <link rel="stylesheet" href="https://use.typekit.net/gyx7jcz.css">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400&family=Work+Sans:wght@300;400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"> 
-    
+    <!-- <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400&family=Work+Sans:wght@300;400;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">  -->
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"> 
     <title>Bootstrap Admin Template by Frontend Sucks</title>
   </head>
   <body>
     <div class="wrapper">
         <div class="sidebar">
-            <button type="button" class="btn sidebar-toggle" data-toggle="button" data-widget="sidebar" aria-pressed="false">
-                <i data-feather="arrow-left"></i>
-            </button>
-            <div class="logo">
-                <!-- <h1><strong>Company</strong> Name</h1> -->
-                <span></span>
-            </div>
             <ul class="sidebar-nav">
-                <li>
-                    <a href="#">
-                        Search
-                    </a>
-                </li>
-            </ul>
-            <ul class="sidebar-nav">
-                <li class="sidebar-nav-h">
-                    Navigation
-                </li>
                 <li><a href="/" class="current">
                     Dashboard
                 </a></li>
                 <li><a href="#">
-                    User  Profile
+                    User Profile
                 </a></li>
                 <li><a href="/pages/tables.html">
                     Tables
+                    <span class="sidebar-nav-badge">2</span>
                 </a></li>
                 <li><a href="#">
                     Typography
                 </a></li>
                 <li><a href="#">
                     Forms
+                    <span class="sidebar-nav-badge">32</span>
                 </a></li>
             </ul>
-            <div class="sidebar-nav-footer">
-                <div class="user-btn">
-                    <div class="user-btn-thumbnail">
-                        <span class="user-btn-icon">
-                            <span class="initials">JD</span>
-                        </span>
-                    </div>
-                    <div class="user-btn-meta">
-                        <span class="user-btn-text">John Doe</span>
-                    </div>
-                </div>
-            </div>
         </div><!-- sidebar end-->
+
+        <div class="container-fluid header bg-white">
+            <nav class="navbar navbar-light justify-content-start">
+                <a class="navbar-brand" href="#">Company Name™</a>
+                <form class="form-inline">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text"><i data-feather="search"></i></div>
+                    </div>
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                </form>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      John Doe
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+            </nav>
+        </div>
+
         <div class="main">
-            <header class="d-flex justify-content-between flex-wrap align-items-center">
-                <h1>Dashboard</h1>
-                <ul class="d-flex align-items-center">
-                    <!-- <li class="search">
-                        <form action="">
-                            <input type="text" name="" id="" placeholder="Search...">
-                        </form>
-                    </li> -->
-                    <!-- <span class="separator"></span> -->
-                    <!-- <li>
-                        <button class="btn btn-primary brutal" data-widget="sidebar">New Item</button>
-                    </li> -->
-                    <li><a href="#">
-                        <i data-feather="bell"></i>
-                    </a></li>
-                    <li><a href="#">
-                        <i data-feather="user"></i> John Doe
-                    </a></li>
-                </ul>
-            </header>
             
             <div class="container-fluid">
-                <div class="row d-none">
-                    <div class="col">
-                        <div class="widget">
-                            <div class="widget-body">
-                                <h2 class="underlined widget-title">Typography</h2>
-                                <h1>This is heading 1</h1>
-                                <p>Suspendisse vel quam malesuada, aliquet sem sit amet, fringilla elit. Morbi tempor tincidunt tempor. Etiam id turpis viverra, vulputate sapien nec, varius sem. Curabitur ullamcorper fringilla eleifend. In ut eros hendrerit est consequat posuere et at velit.</p>
-                                <h2>This is heading 2</h2>
-                                <p>In nec rhoncus eros. Vestibulum eu mattis nisl. Quisque viverra viverra magna nec pulvinar. Maecenas pellentesque porta augue, consectetur facilisis diam porttitor sed. Suspendisse tempor est sodales augue rutrum tincidunt. Quisque a malesuada purus.</p>
-                                <h3>This is heading 3</h3>
-                                <ul>
-                                    <li>Lorem ipsum dolor sit amet</li>
-                                    <li>Consectetur adipiscing elit</li>
-                                    <li>Integer molestie lorem at massa</li>
-                                    <li>Facilisis in pretium nisl aliquet</li>
-                                    <li>Nulla volutpat aliquam velit </li>
-                                </ul>
-                                <h4>This heading 4</h4>
-                                <h5>This heading 5</h5>
-                                <h6>This heading 6</h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt-2 d-none">
-                    <div class="col-3">
-                        <div class="widget">
-                            <div class="widget-body">
-                                <h4 class="text-muted">Figure 1</h4>
-                                <span class="counter">123</span>
-                                <i data-feather="shopping-cart"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="widget">
-                            <div class="widget-body">
-                                <h4 class="text-muted">Figure 2</h4>
-                                <span class="counter">45</span>
-                                <i data-feather="package"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="widget">
-                            <div class="widget-body">
-                                <h4 class="text-muted">Figure 3</h4>
-                                <span class="counter">6</span>
-                                <i data-feather="inbox"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="widget">
-                            <div class="widget-body">
-                                <h4 class="text-muted">Figure 4</h4>
-                                <span class="counter">789</span>
-                                <i data-feather="tag"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="row">
                     <div class="col">
+                        <div class="title">
+                            <h2>Dashboard</h2>
+                            <div class="btn-toolbar mb-2 mb-md-0">
+                                <div class="btn-group mr-2">
+                                  <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+                                  <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+                                </div>
+                                <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+                                  <i data-feather="calendar"></i>
+                                  This week
+                                </button>
+                            </div>
+                        </div>
                         <div class="widget">
                             <div class="widget-body">
-                                <h2 class="underlined widget-title">Chart Sample</h2>
+                                <!-- <h2 class="underlined widget-title">Chart Sample</h2> -->
                                 <canvas id="myChart" class="w-100 my-4" height="350"></canvas>
                             </div>
                         </div>
@@ -162,86 +89,108 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <div class="widget">
-                            <div class="widget-body">
-                                <h2 class="underlined widget-title">
-                                    Some data
-                                </h2>
-                                <div class="table-responsive">
-                                    <table class="table table-bordered">
-                                        <thead class="thead-light">
-                                        <tr>
-                                            <th scope="col">ID</th>
-                                            <th scope="col">First</th>
-                                            <th scope="col">Last</th>
-                                            <th scope="col">Handle</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                        <tr>
-                                            <td scope="row">1</td>
-                                            <td>Mark</td>
-                                            <td>Otto</td>
-                                            <td>@mdo</td>
-                                        </tr>
-                                        <tr>
-                                            <td scope="row">2</td>
-                                            <td>Jacob</td>
-                                            <td>Thornton</td>
-                                            <td>@fat</td>
-                                        </tr>
-                                        <tr>
-                                            <td scope="row">3</td>
-                                            <td>Larry</td>
-                                            <td>the Bird</td>
-                                            <td>@twitter</td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
+                        <div class="title">
+                            <h2>Section title</h2>
                         </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <div class="widget">
-                            <div class="widget-body">
-                                <h2 class="underlined widget-title">Personal Info</h2>
-                                <h3 class="widget-subtitle text-muted">Change users settings</h3>
-                                <p class="widget-text d-none">
-                                    Lorem ipsum is a beautiful text filler
-                                </p>
-                                <form>
-                                    <div class="form-group">
-                                      <label for="exampleInputEmail1">Email address</label>
-                                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                                    </div>
-                                    <div class="form-group">
-                                      <label for="exampleInputPassword1">Password</label>
-                                      <input type="password" class="form-control" id="exampleInputPassword1">
-                                    </div>
-                                    <div class="form-group form-check">
-                                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary">Submit</button>
-                                </form>
-                            </div>
+                        <div class="table-responsive table-hover">
+                            <table class="table">
+                                <thead class="">
+                                <tr>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">First</th>
+                                    <th scope="col">Last</th>
+                                    <th scope="col">Handle</th>
+                                    <th scope="col">Description</th>
+                                    <th scope="col" class="text-right">Actions</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td scope="row">1</td>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit</td>
+                                    <td class="text-right">
+                                        <i data-feather="more-horizontal"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">2</td>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                    <td>Curabitur gravida arcu ac tortor dignissim convallis aenean et</td>
+                                    <td class="text-right">
+                                        <i data-feather="more-horizontal"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">3</td>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td>@twitter</td>
+                                    <td>Suspendisse potenti nullam ac tortor</td>
+                                    <td class="text-right">
+                                        <i data-feather="more-horizontal"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">4</td>
+                                    <td>John</td>
+                                    <td>Doe</td>
+                                    <td>@johndoe</td>
+                                    <td>Non curabitur gravida arcu ac tortor dignissim</td>
+                                    <td class="text-right">
+                                        <i data-feather="more-horizontal"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">5</td>
+                                    <td>Janine</td>
+                                    <td>Smith</td>
+                                    <td>@janine</td>
+                                    <td>Ac placerat vestibulum lectus mauris ultrices eros</td>
+                                    <td class="text-right">
+                                        <i data-feather="more-horizontal"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">6</td>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit</td>
+                                    <td class="text-right">
+                                        <i data-feather="more-horizontal"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">7</td>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                    <td>Curabitur gravida arcu ac tortor dignissim convallis aenean et</td>
+                                    <td class="text-right">
+                                        <i data-feather="more-horizontal"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">8</td>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td>@twitter</td>
+                                    <td>Suspendisse potenti nullam ac tortor</td>
+                                    <td class="text-right">
+                                        <i data-feather="more-horizontal"></i>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="widget">
-                            <div class="widget-body">
-                                <h2 class="underlined widget-title">Settings</h2>
-                                <p class="widget-text">
-                                    Lorem ipsum is a beautiful text filler
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    </div><!-- col end -->
                 </div><!-- row end -->
+              
             </div><!-- container end-->
         </div><!-- main end -->
     </div><!-- wrapper end-->
@@ -272,18 +221,19 @@
             }
           },
           data: {
-            labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+            labels: ['Jan', 'Feb', 'Mar', 'Apr', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
             datasets: [{
                 label: 'Earned',
-                data: [0, 10, 5, 15, 10, 20, 15, 25, 20, 30, 25, 40],
+                data: [0, 10, 5, 15, 10, 25, 20, 30, 25, 40, 20, 15, 25, 20, 30, 25, 30],
                 // lineTension: 0,
                 backgroundColor: 'transparent',
-                borderColor: '#81c3fa',
-                borderWidth: 4,
-                pointBackgroundColor: '#81c3fa'
+                borderColor: '#007bff',
+                borderWidth: 3,
+                pointBackgroundColor: '#007bff'
             }]
           }
         });
-      </script>
+    </script> 
+
   </body>
 </html>

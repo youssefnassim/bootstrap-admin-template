@@ -1,113 +1,85 @@
-.main header {
-    height: 90px;
+.header {
     position: sticky;
-    z-index: 1;
-    top: 0;
-    display: flex;
-    padding: 20px 35px 0;
-    margin-bottom: 15px;
-    transition: all .2s ease-out;
-    background-color: white;
+    top:0; 
+    z-index: 1000;
+    background-color: inherit;
+    padding: 0px !important;
 
-    h1 {
-        font-family: Sporting Grotesque_Bold;
-        font-size: 1.23rem;
-        font-weight: normal;
-        letter-spacing: -.2px;
-        align-self: center;
-        margin: 0;
-    }
+    .navbar {
+        // height: $header-height;
 
-    ul {
-        margin: 0;
-        display: flex;
-        justify-content: flex-end;
+        .navbar-brand {
+            // padding: 0;  
+            margin-right: 0;
+            width: $sidebar-width; // large-screen
+            font-weight: 400;
+        }
 
-        li {
-            margin-left: 15px;
-            align-self: center;
-            flex: 0 0 auto; // flex-shrink not supported in <IE10
+        // to-do: change in bootstrap & refactor
+        form {
+            flex-grow: 1;
+            flex-wrap: nowrap;
+            transition: all .2s ease-in;
+            background-color: white;
 
-            a {
-                color: var(--sec-txt-color);
-                font-weight: 500;
+            .icon {
+                height: 22px;
+                color: var(--sec-txt-color) ;
             }
         }
-    }
-    
-    .icon {
-        width: 22px;
-        height: 22px;
-        stroke-width: 1.75;
-        margin-left: 5px;
-    }
+        input {
+            border-left: 0;
+            padding-left: 0;
+            // border: none;
+            // background-color: #f2f2f2;
+            font-size: .9rem;
+            width: 240px;
+            transition: all .2s ease-out
+        }
+        input:focus {
+            width: 100%;
+            border-width: 1px;
+            // height: calc(100% + 2px);
+            box-shadow: none;
+            margin-right: 0 !important;
+            // background-color: #fafafa;
+        }
+        input:hover {
+            // border: 1px solid black;
+            // border-left: 0;
+        }
+        form:focus-within {
+            box-shadow: 0 0 0 $input-btn-focus-width #c1d7ff;;
+        }
+        form:focus-within + * {
+            display: none;
+        }
+        form:focus-within .input-group-text {
+            border: 1px solid black;
+            border-right: 0;
+            // background-color: #fafafa;
+        }
 
-    .separator {
-        display: block;
-        width: 1px;
-        height: auto;
-        background-color: #e6e8eb;
-        margin-left: 15px;
-    }
-}
+        .input-group-prepend {
+            // background: white;
+        }
+        .input-group-text {
+            font-size: .9rem;
+            border-right: 0;
+            transition: all .2s ease-out;
 
-.main header.fixed {
-    // box-shadow: rgb(255, 255, 255) 0px 20px 20px 0px;
-    // border-bottom: 1px solid $border-color;
-}
-
-// header nav
-.header-nav {
-    flex-grow: 1;
-    align-self: center;
-    height: auto;
-    // padding-right: 30px;
-
-    ul {
-        margin: 0;
-        display: flex;
-        justify-content: flex-end;
-
-        li {
-            margin-left: 15px;
-            align-self: center;
-            flex: 0 0 auto; // flex-shrink not supported in <IE10
-
-            a {
-                color: var(--sec-txt-color);
-                font-weight: 500;
+            &:after {
+                content: '.';
+                visibility: hidden;
             }
         }
-    }
-    
-    .icon {
-        width: 22px;
-        height: 22px;
-        stroke-width: 1.75;
-        margin-left: 5px;
-    }
-    
-    .separator {
-        display: block;
-        width: 1px;
-        height: auto;
-        background-color: #e6e8eb;
-        margin-left: 15px;
+
+
     }
 }
 
-/* search */
-.search {
-    width: 250px;
-}
-.search form {
-    width: 100%;
-}
-.search input {
-    width: 100%;
-    padding: 5px 20px;
-    border: 1px solid #d9d9d9;
-    border-radius: $border-radius;
-    background-color: #fff;
-    color: var(--sec-txt-color);
+.page-title {
+    h2 {
+        font-weight: 400;
+    }
 }

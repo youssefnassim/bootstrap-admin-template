@@ -11,6 +11,8 @@
     <!-- Fonts -->
     <script src="https://unpkg.com/feather-icons"></script>
     <link rel="stylesheet" href="https://use.typekit.net/gyx7jcz.css">
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet"> 
+
     
     <title>Bootstrap Admin Template by Frontend Sucks</title>
   </head>
@@ -20,9 +22,9 @@
             <button type="button" class="btn sidebar-toggle" data-toggle="button" data-widget="sidebar" aria-pressed="false">
                 <i data-feather="arrow-left"></i>
             </button>
-            <div class="logo">
-                <!-- <h1><strong>Frontend</strong><br> Sucks</h1> -->
-                <span></span>
+            <div class="logo d-flex align-items-center">
+                <h1>Company Name</h1>
+                <!-- <span></span> -->
             </div>
             <ul class="sidebar-nav">
                 <li class="sidebar-nav-h">
@@ -58,32 +60,28 @@
             </div>
         </div><!-- sidebar end-->
         <div class="main">
-            <header class="d-flex justify-content-between flex-wrap align-items-center">
-                <h1>Tables</h1>
-                <ul class="d-flex align-items-center">
-                    <!-- <li class="search">
-                        <form action="">
-                            <input type="text" name="" id="" placeholder="Search...">
-                        </form>
-                    </li> -->
-                    <!-- <span class="separator"></span> -->
-                    <!-- <li>
-                        <button class="btn btn-primary brutal" data-widget="sidebar">New Item</button>
-                    </li> -->
-                    <li><a href="#">
-                        <i data-feather="bell"></i>
-                    </a></li>
-                    <li><a href="#">
-                        <i data-feather="user"></i> John Doe
-                    </a></li>
-                </ul>
-            </header>
+            <div class="container-fluid bg-white mb-2 header" style="position: sticky; top:0; z-index: 1000;">
+                <div class="row">
+                    <div class="col my-0">
+                        <header class="d-flex justify-content-between flex-wrap align-items-center">
+                            <input type="text" placeholder="Search..." class="search"/>
+                        </header>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid page-title">
+                <div class="row">
+                    <div class="col">
+                        <h2>Tables</h2>
+                    </div>
+                </div>
+            </div>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-8">
+                    <div class="col">
                         <div class="widget">
                             <div class="widget-body">
-                                <h2 class="underlined widget-title">
+                                <h2 class="widget-title">
                                     Simple table
                                 </h2>
                                 <p>
@@ -124,10 +122,10 @@
                             </div>
                         </div>
                     </div><!-- col end -->
-                    <div class="col-8">
+                    <div class="col">
                         <div class="widget">
                             <div class="widget-body">
-                                <h2 class="underlined widget-title">
+                                <h2 class="widget-title">
                                     Striped rows
                                 </h2>
                                 <p>
@@ -170,10 +168,10 @@
                     </div><!-- col end -->
                 </div><!-- row end -->
                 <div class="row">
-                    <div class="col-8">
+                    <div class="col">
                         <div class="widget">
                             <div class="widget-body">
-                                <h2 class="underlined widget-title">
+                                <h2 class="widget-title">
                                     Bordered table
                                 </h2>
                                 <p>
@@ -214,10 +212,10 @@
                             </div>
                         </div>
                     </div><!-- col end -->
-                    <div class="col-8">
+                    <div class="col">
                         <div class="widget">
                             <div class="widget-body">
-                                <h2 class="underlined widget-title">
+                                <h2 class="widget-title">
                                     Hoverable rows
                                 </h2>
                                 <p>

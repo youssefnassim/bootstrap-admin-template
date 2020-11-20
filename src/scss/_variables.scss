@@ -1,4 +1,17 @@
 // Color system
+
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
 $blue:    #007bff;
 $indigo:  #6610f2;
 $purple:  #6f42c1;
@@ -10,27 +23,66 @@ $green:   #28a745;
 $teal:    #20c997;
 $cyan:    #17a2b8;
 
-$primary:       #0d2481;
+$primary:       $blue;
+// #2387fb
+
+$theme-colors: ();
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg:                   $white;
+$body-color:                $gray-900;
+
+// Paragraphs
+//
+// Style p element.
+
+$paragraph-margin-bottom:   1.2rem !default;
+
+// Typography
+
+$line-height-base:            1.75;
+
+$font-family-sans-serif:      neue-haas-grotesk-text, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
 
-$input-btn-focus-width:         .2rem ;
-$input-focus-box-shadow:        0 0 0 $input-btn-focus-width #c1d7ff;
 
-$btn-border-radius:           5px;
+// Links
+//
+// Style anchor elements.
 
-$input-focus-border-color:    #000;
+// $link-color:                              theme-color("primary");
+$link-decoration:                         none;
+// $link-hover-color:                        darken($link-color, 15%);
+$link-hover-decoration:                   underline;
 
 // Components
 // 
 // Define common padding and border radius sizes and more.
 
-$border-color:              #e6e8eb;
+$border-color:              #dadce0;
 // #e6e8eb
 
-$border-radius:               2px;
+$border-radius:               0px;
+
+$input-btn-focus-width:         .2rem;
+// $input-focus-box-shadow:        0 0 0 $input-btn-focus-width black;
+$input-focus-box-shadow:        0 0 0 $input-btn-focus-width #c1d7ff;
+
+// $input-group-addon-color:               $input-color;
+$input-group-addon-bg:                  inherit;
+// $input-group-addon-border-color:        $input-border-color;
+
+$btn-border-radius:           5px;
+
+$input-focus-border-color:    black;
+
+
 
 // Typography
-$font-size-base: .9rem;
+$font-size-base: 1rem;
 
 $h1-font-size:                $font-size-base * 2;
 $h2-font-size:                $font-size-base * 1.5;
@@ -39,9 +91,15 @@ $h4-font-size:                $font-size-base * 1;
 $h5-font-size:                $font-size-base - .1;
 $h6-font-size:                $font-size-base - .2rem;
 
+// $headings-margin-bottom:      $spacer / 2 !default;
+// $headings-font-family:        null !default;
+$headings-font-weight:        400;
+// $headings-line-height:        1.2 !default;
+// $headings-color:              null !default;
+
 
 // Tables
-$table-cell-padding:          .7rem 15px;
+$table-cell-padding:          .85rem 15px;
 
 $table-accent-bg:             #f8f8f8;
 
@@ -51,8 +109,13 @@ $table-head-bg:               #f8f8f8;
 
 
 // Grid columns
-// $grid-gutter-width: 20px;
+// $grid-gutter-width: 10px;
 
 
 // Links
 $link-hover-decoration:                   none;
+
+
+// Random
+$sidebar-width: 240px;
+$header-height: 55px; 

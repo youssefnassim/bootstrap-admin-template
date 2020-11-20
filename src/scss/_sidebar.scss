@@ -1,174 +1,39 @@
 .sidebar {
-  width: 240px;
-  height: 100%;
+  background-color: inherit;
   position: fixed;
-  top: 0;
   left: 0;
-  z-index: 2;
-  overflow-y: auto;
-  background: #f2f2f2;
-  padding: 0 35px;
+  bottom: 0;
+  top: $header-height;
+  width: $sidebar-width;
+  padding: 20px 16px;
 
-  hr {
-    border-color: #d2d2d2;
-  }
-
-  &:hover .sidebar-toggle {
-    opacity: 1;
-  }
   .sidebar-nav {
-    margin-top: 30px;
+    li {
+      margin-bottom: 7px;
 
-    // when vertical space isn't enough and is overlayed by sidebar-nav-footer 
-    &:last-of-type {
-      padding-bottom: 60px;
-    }
-
-    .icon {
-      align-self: center;
-      margin-right: 10px;
-      stroke-width: 1.5;
-      width: 18px;
-    }
-
-    span {
-      align-self: center;
-    }
-
-    a {
-      display: flex;
-      padding: 0;
-      margin: 0 0 20px;
-      border-radius: 5px;
-      font-family: Sporting Grotesque_Regular;
-      font-size: .92rem;
-      font-weight: 500;
-      color: rgb(102, 102, 102);
-
-      &.current {
-        // font-style: italic;
-        color: black;
+      a {
+        font-size: .95rem;
+        font-weight: 400;
+        color: var(--main-txt-color);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
         .icon {
-          color: inherit;
+          width: 18px;
+          stroke-width: 1.5;
+        }
+
+        .sidebar-nav-badge {
+          font-size: .65rem;
+          color: white;
+          // border: 1px solid var(--main-txt-color);
+          background-color: $gray-500;
+          border-radius: 50px;
+          padding: 0 6px;
         }
       }
-
-      &:not(.current):hover {
-        color: var(--main-txt-color); 
-      }
-    }
-
-    .sidebar-nav-h {
-      margin-bottom: 20px;
-      font-size: .8rem;
-      color: #666;
     }
   }
 
-  .sidebar-nav-footer {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    bottom: 0px;
-    left: 0px;
-    width: 240px;
-    padding: 20px;
-    background-color: inherit;
-    border: inherit;
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 20px;
-      right: 20px;
-      border-top: 1px solid #d2d2d2;
-    }
-    
-    &:hover {
-      cursor: pointer;
-      background-color: #eaeaea;
-    }
-  }
-}
-
-// bbat default sidebar toggle button 
-.sidebar-toggle {
-  position: absolute;
-  top: 25px;
-  left: 200px;
-  z-index: 1;
-  display: inline-block;
-  width: 20px;
-  height: 25px;
-  border-radius: 5px;
-  transition: all .2s ease-out;
-  opacity: 0;
-
-  .icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: var(--sec-txt-color);
-    width: 18px;
-  }
-
-  &:hover {
-    background-color: #e2e2e2;
-    cursor: pointer;
-  }
-
-  &.active .icon {
-    transform: translate(-50%, -50%) rotate(180deg);
-  }
-}
-
-/* 
-TODO: refactor to generalise button
-*/
-.user-btn {
-  display: flex;
-  margin: -5px; 
-  border-top: 0px solid #d2d2d2;
-  border-radius: 50px;
-  transition: background-color .2s ease-out;
-}
-.user-btn:hover {
-  cursor: pointer;
-  background-color: #eaeaea;
-}
-.user-btn > * {
-  padding: 5px;
-  align-self: center;
-}
-.user-btn-icon {
-  display: block;
-  padding: 2px;
-  height: 32px;
-  width: 32px;
-  border-radius: 50px;
-  border: 2px solid rgba(13, 36, 129, .2);
-  overflow: hidden;
-  background-color: #fff;
-  color: var(--sec-txt-color);
-  text-align: center;
-  position: relative;
-}
-.user-btn-icon .initials {
-  font-size: .95rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.user-btn-icon img {
-  height: 100%;
-  width: 100%;
-  border-radius: 50px;
-}
-.user-btn .user-btn-text {
-  font-size: .9rem;
-  font-weight: 500;
 }

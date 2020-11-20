@@ -39819,7 +39819,7 @@
   var sidebar = new Sidebar(); // Scroll event to update header style
 
   window.addEventListener('scroll', function () {
-    return this.scrollY > 10 ? document.querySelector('.main header').classList.add('fixed') : document.querySelector('.main header').classList.remove('fixed');
+    return this.scrollY > 10 ? document.querySelector('.header').classList.add('fixed') : document.querySelector('.header').classList.remove('fixed');
   }); // chart
   // const ctx = document.getElementById('s').getContext('2d')
   // const testChart = new Chart(ctx, {
